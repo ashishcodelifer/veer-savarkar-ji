@@ -10,3 +10,4 @@ desktop.ini
 
 # Vercel CLI
 .vercel
+.env*
