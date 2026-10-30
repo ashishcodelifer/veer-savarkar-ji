@@ -1,0 +1,12 @@
+# Reference artwork kept locally only (not used by the site)
+veer savarkar ji.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Vercel CLI
+.vercel
