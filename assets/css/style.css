@@ -735,11 +735,9 @@ a:active { transition-duration: 120ms; }
   filter: saturate(1.05) contrast(1.04);
   transition: transform 1.2s var(--ease-out);
 }
-.plate-frame--detail {
-  background-image: url("../img/veer-savarkar.png");
-  background-repeat: no-repeat;
-  background-size: auto 235%;
-  background-position: 43% 82%;
+.plate-frame--poster img {
+  object-position: 50% 50%;
+  transform: none;
 }
 .plate:hover .plate-frame img { transform: scale(1.01); }
 .plate figcaption {
@@ -753,6 +751,16 @@ a:active { transition-duration: 120ms; }
   color: var(--dim-2);
 }
 .plate figcaption span { color: var(--gold); }
+.plate figcaption span + span {
+  color: var(--dim-2);
+  text-align: right;
+}
+.plate .art-credit {
+  color: var(--gold);
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
+}
+.plate .art-credit:hover { color: var(--cream); border-bottom-color: currentColor; }
 
 .manifesto-copy p {
   font-size: 0.98rem;
